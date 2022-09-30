@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,  1 skipped,  2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -110,20 +110,6 @@
                     </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.sauceDemo.TestCLasses.TC001_VerifyLoginFunctionality" class="method navigator-link" hash-for-method="loginFuntionality">loginFuntionality</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
-                  </li>
-                  <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
                       <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
@@ -138,6 +124,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.sauceDemo.TestCLasses.TC002_VerifyLogOutFunctionality" class="method navigator-link" hash-for-method="logOutFunctionality">logOutFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sauceDemo.TestCLasses.TC001_VerifyLoginFunctionality" class="method navigator-link" hash-for-method="loginFuntionality">loginFuntionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -172,9 +163,9 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.sauceDemo.TestCLasses.TC001_VerifyLoginFunctionality</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -183,37 +174,10 @@
                   <a name="loginFuntionality">
                   </a> <!-- loginFuntionality -->
                   <span class="method-name">loginFuntionality</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=105.0.5195.127)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SAURABH&apos;, ip: &apos;192.168.43.233&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61653}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4543b5fd0460e6cda9ea09ead09b3bf9
-*** Element info: {Using=xpath, value=//form//div[1]//input}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
-	at com.sauceDemo.POMClasses.LoginPOMClass.sendUsername(LoginPOMClass.java:18)
-	at com.sauceDemo.TestCLasses.TestBaseClass.setUP(TestBaseClass.java:45)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -304,24 +268,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'mutipleProductAddToCartFunctionality')
 data.setCell(0, 2, 'com.sauceDemo.TestCLasses.TC004_VerifyMultipleproductAddtoCartFunctionality')
-data.setCell(0, 3, 591);
+data.setCell(0, 3, 955);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'logOutFunctionality')
-data.setCell(1, 2, 'com.sauceDemo.TestCLasses.TC002_VerifyLogOutFunctionality')
-data.setCell(1, 3, 500);
+data.setCell(1, 1, 'loginFuntionality')
+data.setCell(1, 2, 'com.sauceDemo.TestCLasses.TC001_VerifyLoginFunctionality')
+data.setCell(1, 3, 702);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'bagProductAddTOCartFunctionality')
 data.setCell(2, 2, 'com.sauceDemo.TestCLasses.TC003_VerfiyBagProductAddtoCartFunctionality')
-data.setCell(2, 3, 308);
+data.setCell(2, 3, 578);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginFuntionality')
-data.setCell(3, 2, 'com.sauceDemo.TestCLasses.TC001_VerifyLoginFunctionality')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'logOutFunctionality')
+data.setCell(3, 2, 'com.sauceDemo.TestCLasses.TC002_VerifyLogOutFunctionality')
+data.setCell(3, 3, 402);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -356,58 +320,56 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">mutipleProductAddToCartFunctionality</span>
-                <span class="method-start">13149 ms</span>
+                <span class="method-start">6002 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13750 ms</span>
+                <span class="method-start">6966 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.sauceDemo.TestCLasses.TC002_VerifyLogOutFunctionality</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUP(chrome)</span>
-                <span class="method-start">13756 ms</span>
+                <span class="method-start">6976 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">logOutFunctionality</span>
-                <span class="method-start">21836 ms</span>
+                <span class="method-start">10796 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">22340 ms</span>
+                <span class="method-start">11201 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.sauceDemo.TestCLasses.TC003_VerfiyBagProductAddtoCartFunctionality</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUP(chrome)</span>
-                <span class="method-start">22342 ms</span>
+                <span class="method-start">11202 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">bagProductAddTOCartFunctionality</span>
-                <span class="method-start">29570 ms</span>
+                <span class="method-start">15392 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">29880 ms</span>
+                <span class="method-start">15973 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.sauceDemo.TestCLasses.TC001_VerifyLoginFunctionality</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUP(chrome)</span>
-                <span class="method-start">29882 ms</span>
+                <span class="method-start">15975 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginFuntionality</span>
-                <span class="method-start">38534 ms</span>
+                <span class="method-start">20897 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">38542 ms</span>
+                <span class="method-start">21602 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

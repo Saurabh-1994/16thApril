@@ -4,13 +4,6 @@
   <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="com.sauceDemo.TestCLasses.TC001_VerifyLoginFunctionality">
-        <methods>
-          <include name="tearDown"/>
-          <include name="loginFuntionality"/>
-          <include name="setUP"/>
-        </methods>
-      </class> <!-- com.sauceDemo.TestCLasses.TC001_VerifyLoginFunctionality -->
       <class name="com.sauceDemo.TestCLasses.TC004_VerifyMultipleproductAddtoCartFunctionality">
         <methods>
           <include name="tearDown"/>
